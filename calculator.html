@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-theme_default" >
+        
+        <lightning-card title="Calculator" icon-name="standard:qualifications">
+        <div  class="slds-m-left_x-small ">
+        <lightning-input label="Number 1" data-id="num1" placeholder="Enter Number 1"  class="slds-size_1-of-2" ></lightning-input>
+        <lightning-input label="Number 2" data-id="num2" placeholder="Enter Number 2"  class="slds-size_1-of-2"></lightning-input>
+       </div>
+        <div class="slds-m-top_x-small" style="font-size: 1em;font-weight:bold">
+        <lightning-button variant="success" label="ADD"  class="slds-m-left_x-small" onclick={handleAdd}></lightning-button>
+        <lightning-button variant="success" label="SUB"  class="slds-m-left_x-small" onclick={handleSub}></lightning-button>
+        <lightning-button variant="success" label="MUL"  class="slds-m-left_x-small"  onclick={handleMul}></lightning-button>
+        <lightning-button variant="success" label="DIV"  class="slds-m-left_x-small" onclick={handleDiv}></lightning-button>
+        </div>
+
+        <div class="slds-m-vertical_medium slds-m-left_x-small ">
+            <p class="slds-text-heading_medium" >The Answer is <span >{result}</span></p>
+        </div>
+    </lightning-card>
+
+
+    </div>
+
+    
+</template>
