@@ -23,6 +23,26 @@ export default class Calculator extends LightningElement {
      var num2=parseInt(this.template.querySelector('[data-id="num2"]').value);
      this.result=num1-num2;
  }
+ 
+ 
+ 
+    handleMul()
+    {
+        var num1=parseInt(this.template.querySelector('[data-id="num1"]').value);
+        var num2=parseInt(this.template.querySelector('[data-id="num2"]').value);
+        this.result=num1*num2;
+
+    }
+ 
+ 
+     handleDiv()
+    {
+        var num1=parseInt(this.template.querySelector('[data-id="num1"]').value);
+        var num2=parseInt(this.template.querySelector('[data-id="num2"]').value);
+        this.result=num1/num2;
+
+    }
+ 
 
 
 }
